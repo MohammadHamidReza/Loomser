@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Address</title>
+
+</head>
+<body>
+<form action="/postaddress/" method="post">
+    {% csrf_token %}
+    Address:
+    <input type="text" name="address"><br><br>
+    Phone:
+    <input type="text" name="Phone"><br><br>
+    AddressType:
+    <input type="radio" name="addType" value="home">
+    <input type="radio" name="addType" value="hotel"><br><br>
+    Preferable time:
+    <input type="time" name="preftime"><br><br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>

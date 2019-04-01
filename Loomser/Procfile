@@ -1,0 +1,1 @@
+web: gunicorn apple-custard-82087.wsgi --log-file -
